@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "desafio-dio-POO"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}

@@ -1,12 +1,18 @@
 package br.com.dio.desafio.dominio;
 
-public class Curso {
+public class Curso  extends Conteudo{
 	
 	private String titulo;
 	private String descricao;
 	int cargaHoraria;
 	
 	
+	@Override
+	public double calcularXp() {
+		// TODO Auto-generated method stub
+		return XP_PADRAO * cargaHoraria;
+	}
+		
 	public Curso () {
 		
 	}
@@ -50,9 +56,8 @@ public class Curso {
 
 	@Override
 	public String toString() {
-		return "Curso [nome=" + titulo + ", descricao=" + descricao + ", cargaHoraria=" + cargaHoraria + "]";
+		return "Curso [titulo=" + getTitulo() + ", descricao=" + getDescricao() + ", cargaHoraria=" + cargaHoraria + "]";
 	}
-	
-	
+		
 
 }
